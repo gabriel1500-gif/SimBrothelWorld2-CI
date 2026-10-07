@@ -1,0 +1,175 @@
+name: Smoke exact V6 gameplay
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Simulate critical new-game paths
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json, math, pathlib
+
+          root=pathlib.Path(".")
+          roster=json.loads((root/"Assets/StreamingAssets/SBW2/Data/SBW2_GAMEPLAY_ROSTER_v208.json").read_text())
+          props=json.loads((root/"Assets/StreamingAssets/SBW2/Data/v208_properties.json").read_text())
+          chars={c["id"]:c for c in roster["characters"]}
+          properties={p["id"]:p for p in props["properties"]}
+
+          modes={
+              "easy":  {"gold":300, "starter":"belldandy", "income":1.14, "cost":0.90},
+              "normal":{"gold":150, "starter":"elsa",      "income":1.00, "cost":1.00},
+              "hard":  {"gold":75,  "starter":"lara_croft","income":0.90, "cost":1.13},
+          }
+
+          initial_market=[
+              "pebbles_flintstone_adult_21",
+              "nurse_joy",
+              "mrs_possible",
+              "anna",
+              "bulma",
+              "nami",
+          ]
+
+          alley=properties["alley"]
+          assert alley["cap"] >= 1
+          assert alley["price"] == 0
+
+          for cid in initial_market:
+              assert cid in chars, cid
+
+          exact_initial_costs={
+              "pebbles_flintstone_adult_21":380,
+              "nurse_joy":450,
+              "mrs_possible":480,
+              "anna":550,
+              "bulma":1190,
+              "nami":2840,
+          }
+          for cid,cost in exact_initial_costs.items():
+              assert chars[cid]["cost"] == cost, (cid,chars[cid]["cost"],cost)
+
+          for mode,cfg in modes.items():
+              starter=chars[cfg["starter"]]
+              assert len(starter["stats"]) >= 8
+              assert len(starter["skills"]) >= 3
+              assert starter["price"] >= 5
+              assert starter["salary"] >= 0
+
+              charisma, refinement = starter["stats"][0], starter["stats"][1]
+              reputation, health = starter["stats"][4], starter["stats"][7]
+              charm, service = starter["skills"][0], starter["skills"][1]
+
+              attraction=(
+                  charisma*0.31 +
+                  refinement*0.27 +
+                  reputation*0.19 +
+                  starter["rank"]*5 +
+                  charm*3
+              )
+              pressure=max(0.42,min(1.24,1.55-starter["price"]/max(35,attraction*0.90)))
+              customers=math.floor(
+                  (attraction/15.2) *
+                  alley["appeal"] *
+                  1.08 *
+                  pressure *
+                  max(0.30,min(1.0,health/100)) *
+                  1.04
+              )
+              customers=max(0,min(36,customers))
+              revenue=round(
+                  customers *
+                  starter["price"] *
+                  cfg["income"] *
+                  (1+service*0.025)
+              )
+              costs=round(
+                  (alley["upkeep"]+starter["salary"]) *
+                  cfg["cost"] *
+                  1.10
+              )
+
+              assert customers > 0, (mode, customers)
+              assert revenue > costs, (mode, revenue, costs)
+              assert cfg["gold"] + revenue - costs > cfg["gold"]
+
+              print(
+                  mode,
+                  "starter=",cfg["starter"],
+                  "customers=",customers,
+                  "revenue=",revenue,
+                  "costs=",costs,
+                  "day1_gold=",cfg["gold"]+revenue-costs,
+              )
+
+          gameplay=(root/"Assets/SBW2/Scripts/Core/GameplayManager.cs").read_text()
+          assert "LegacyInitialMarketIds" in gameplay
+          assert "public bool SetPrice" in gameplay
+          assert "public void EndDay" in gameplay
+          assert "Save();" in gameplay
+          assert "Load();" in gameplay
+          assert "!c.photo_pack_active" not in gameplay
+          assert "PhotoUnlockedCount" in gameplay
+          assert "PhotoWorkProgress" in gameplay
+          assert "UnlockNextPhoto" in gameplay
+          assert 'return (0, 0, false, "sick")' in gameplay
+          assert 'return (0, 0, false, "noRoom")' in gameplay
+          assert 'return (gross, customers, true, "work")' in gameplay
+          assert "new DailyStaffResult" in gameplay
+          assert "staffResults = dayResults.ToArray()" in gameplay
+          assert "if (result.worked)" in gameplay
+          assert "(PhotoWorkProgress(staff.id) % 3) + 1" in gameplay
+          assert "if (progress < 3)" in gameplay
+
+          for token in (
+              "UseWeeklyJoker", "WeeklyJokerCashValue",
+              "UsePremiumCard", "SellStaff", "MaybeBuyerOffer",
+              "AcceptBuyerOffer", "DeclineBuyerOffer"
+          ):
+              assert token in gameplay, token
+          assert "State.specialTokens++" in gameplay
+          assert "rng.NextDouble() >= 0.03" in gameplay
+
+          for token in (
+              "CreateCustomCharacter", "CustomStats",
+              "State.customCount >= 5",
+              "age < 21 || age > 80",
+              "cost = 1000", "salary = 12", "price = 24"
+          ):
+              assert token in gameplay, token
+
+          mobile=(root/"Assets/SBW2/Scripts/UI/MobileGameController.cs").read_text()
+          for token in (
+              'Open("market")','Open("staff")','Open("properties")',
+              'Open("progression")','Open("equipment")','Open("gallery")',
+              "CycleStaffAction","CycleWorkplace","FEE -5","FEE +5",
+              "daySummary?.ShowLastDay()","RenderDiagnostics",
+              'Bind(secondaryButton, "TITLE"',
+              "RunMediaDiagnostic","PASS 32/32",
+              "Photos unlocked","RenderManagement",
+              "DECLINE OFFER","CONFIRM SELL",
+              "RenderCustom","CycleCustomKind","customNameInput","customAgeInput"
+          ):
+              assert token in mobile, token
+
+          save_models=(root/"Assets/SBW2/Scripts/Data/GameplayModels.cs").read_text()
+          assert "public int schema = 3;" in save_models
+          assert 'public string source_build = "v208_ELSA_21";' in save_models
+
+          progression=(root/"Assets/SBW2/Scripts/Core/ProgressionManager.cs").read_text()
+          assert progression.count("new EquipmentItem") == 12
+          assert "BuyItem" in progression and "EquipItem" in progression
+          assert "EffectiveJoy" in progression
+
+          print("PASS critical new-game/mobile/save smoke")
+          PY
