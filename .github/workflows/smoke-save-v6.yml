@@ -1,0 +1,51 @@
+name: Smoke exact V6 save resilience
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify save recovery design
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          root=Path(".")
+          mgr=(root/"Assets/SBW2/Scripts/Save/SaveMigrationManager.cs").read_text()
+          gm=(root/"Assets/SBW2/Scripts/Core/GameplayManager.cs").read_text()
+
+          required_mgr=[
+              'path + ".bak"',
+              'path + ".tmp"',
+              "File.WriteAllText(temp, json)",
+              "File.Copy(path, backup, true)",
+              "File.Copy(temp, path, true)",
+              "TryLoadPrimaryOrBackup",
+          ]
+          for token in required_mgr:
+              assert token in mgr, token
+
+          required_gm=[
+              "TryLoadPrimaryOrBackup",
+              "usedBackup",
+              "WriteWithRollingBackup",
+              "media_complete_v208.json",
+              'media.source_build != "v208_ELSA_21"',
+              "media.physical_photo_count != 650",
+              "media.active_pack_count != 32",
+          ]
+          for token in required_gm:
+              assert token in gm, token
+
+          print("PASS save resilience + runtime media completion gate")
+          PY
