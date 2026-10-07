@@ -1,0 +1,21 @@
+name: Public runner probe
+
+on:
+  push:
+    paths:
+      - ".github/workflows/runner-probe.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Confirm hosted runner
+        run: |
+          set -euo pipefail
+          echo "PUBLIC_RUNNER_OK"
+          uname -a
+          dotnet --version
