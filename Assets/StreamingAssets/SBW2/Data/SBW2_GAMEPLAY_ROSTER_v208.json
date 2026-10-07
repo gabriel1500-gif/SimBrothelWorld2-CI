@@ -1,0 +1,3785 @@
+{
+  "characters": [
+    {
+      "id": "arelia",
+      "name": "Ariel",
+      "inspiredBy": "Ariel",
+      "source": "Disney-inspired original",
+      "profile": "glamour",
+      "age": 24,
+      "cost": 2840,
+      "rank": 3,
+      "salary": 26,
+      "price": 55,
+      "photo_pack_active": true,
+      "photo_count": 18,
+      "runtime_var": "SBW2_V191_ARIEL",
+      "stats": [
+        93,
+        81,
+        60,
+        50,
+        80,
+        82,
+        78,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "bulma",
+      "name": "Bulma",
+      "inspiredBy": "Bulma",
+      "source": "Dragon Ball",
+      "profile": "intellectual",
+      "age": 29,
+      "cost": 1190,
+      "rank": 2,
+      "salary": 22,
+      "price": 48,
+      "photo_pack_active": true,
+      "photo_count": 20,
+      "runtime_var": "SBW2_V131_BULMA",
+      "stats": [
+        72,
+        93,
+        55,
+        83,
+        68,
+        63,
+        51,
+        100
+      ],
+      "skills": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "nami",
+      "name": "Nami",
+      "inspiredBy": "Nami",
+      "source": "One Piece",
+      "profile": "glamour",
+      "age": 23,
+      "cost": 2840,
+      "rank": 3,
+      "salary": 26,
+      "price": 54,
+      "photo_pack_active": true,
+      "photo_count": 22,
+      "runtime_var": "SBW2_V144_NAMI",
+      "stats": [
+        88,
+        82,
+        60,
+        47,
+        79,
+        76,
+        74,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "hinata_hyuga_adult",
+      "name": "Hinata Hyuga (adult)",
+      "inspiredBy": "Hinata Hyuga",
+      "source": "Naruto/Boruto",
+      "profile": "gentle",
+      "age": 32,
+      "cost": 700,
+      "rank": 2,
+      "salary": 22,
+      "price": 47,
+      "photo_pack_active": true,
+      "photo_count": 20,
+      "runtime_var": "SBW2_V148_HINATA",
+      "stats": [
+        82,
+        79,
+        57,
+        43,
+        58,
+        88,
+        56,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "lara_croft",
+      "name": "Lara Croft",
+      "inspiredBy": "Lara Croft",
+      "source": "Tomb Raider",
+      "profile": "athletic",
+      "age": 30,
+      "cost": 2830,
+      "rank": 3,
+      "salary": 25,
+      "price": 47,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        74,
+        65,
+        95,
+        71,
+        59,
+        74,
+        63,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "chun_li",
+      "name": "Chun-Li",
+      "inspiredBy": "Chun-Li",
+      "source": "Street Fighter",
+      "profile": "athletic",
+      "age": 30,
+      "cost": 2820,
+      "rank": 3,
+      "salary": 25,
+      "price": 47,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        77,
+        66,
+        93,
+        75,
+        57,
+        73,
+        59,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "princess_peach",
+      "name": "Princess Peach",
+      "inspiredBy": "Princess Peach",
+      "source": "Super Mario",
+      "profile": "royal",
+      "age": 25,
+      "cost": 1190,
+      "rank": 2,
+      "salary": 22,
+      "price": 50,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        82,
+        87,
+        60,
+        60,
+        70,
+        65,
+        55,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "daisy",
+      "name": "Daisy",
+      "inspiredBy": "Princess Daisy",
+      "source": "Super Mario",
+      "profile": "royal",
+      "age": 25,
+      "cost": 1460,
+      "rank": 2,
+      "salary": 22,
+      "price": 50,
+      "photo_pack_active": true,
+      "photo_count": 22,
+      "runtime_var": "SBW2_V184_DAISY",
+      "stats": [
+        82,
+        87,
+        60,
+        60,
+        70,
+        65,
+        55,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "samus_aran",
+      "name": "Samus Aran",
+      "inspiredBy": "Samus Aran",
+      "source": "Metroid",
+      "profile": "warrior",
+      "age": 30,
+      "cost": 1460,
+      "rank": 2,
+      "salary": 22,
+      "price": 43,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        70,
+        61,
+        97,
+        80,
+        65,
+        56,
+        54,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "harley_quinn",
+      "name": "Harley Quinn",
+      "inspiredBy": "Harley Quinn",
+      "source": "DC Comics",
+      "profile": "chaotic",
+      "age": 28,
+      "cost": 1550,
+      "rank": 2,
+      "salary": 22,
+      "price": 46,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        93,
+        49,
+        71,
+        30,
+        68,
+        84,
+        86,
+        100
+      ],
+      "skills": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "rogue",
+      "name": "Rogue",
+      "inspiredBy": "Rogue",
+      "source": "X-Men",
+      "profile": "warrior",
+      "age": 27,
+      "cost": 1100,
+      "rank": 2,
+      "salary": 22,
+      "price": 43,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        70,
+        60,
+        92,
+        81,
+        62,
+        57,
+        54,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "jessica_rabbit",
+      "name": "Jessica Rabbit",
+      "inspiredBy": "Jessica Rabbit",
+      "source": "Who Framed Roger Rabbit",
+      "profile": "seductive",
+      "age": 29,
+      "cost": 2900,
+      "rank": 3,
+      "salary": 26,
+      "price": 54,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        95,
+        75,
+        61,
+        53,
+        77,
+        75,
+        97,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "marina_mist",
+      "name": "Marina Mist",
+      "inspiredBy": "Original adult water specialist",
+      "source": "Original",
+      "profile": "athletic",
+      "age": 24,
+      "cost": 2820,
+      "rank": 3,
+      "salary": 25,
+      "price": 47,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        73,
+        63,
+        93,
+        70,
+        63,
+        73,
+        62,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "2b",
+      "name": "2B",
+      "inspiredBy": "2B",
+      "source": "NieR: Automata",
+      "profile": "warrior",
+      "age": 25,
+      "cost": 1460,
+      "rank": 2,
+      "salary": 22,
+      "price": 44,
+      "photo_pack_active": true,
+      "photo_count": 20,
+      "runtime_var": "SBW2_V131_2B",
+      "stats": [
+        70,
+        68,
+        96,
+        77,
+        64,
+        56,
+        53,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "tifa_lockhart",
+      "name": "Tifa Lockhart",
+      "inspiredBy": "Tifa Lockhart",
+      "source": "Final Fantasy VII",
+      "profile": "athletic",
+      "age": 24,
+      "cost": 2830,
+      "rank": 3,
+      "salary": 25,
+      "price": 47,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        79,
+        58,
+        97,
+        70,
+        57,
+        79,
+        63,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "mai_shiranui",
+      "name": "Mai Shiranui",
+      "inspiredBy": "Mai Shiranui",
+      "source": "Fatal Fury / KOF",
+      "profile": "seductive",
+      "age": 25,
+      "cost": 2890,
+      "rank": 3,
+      "salary": 26,
+      "price": 54,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        96,
+        70,
+        70,
+        54,
+        77,
+        73,
+        88,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "jinx",
+      "name": "Jinx",
+      "inspiredBy": "Jinx",
+      "source": "League of Legends / Arcane",
+      "profile": "chaotic",
+      "age": 22,
+      "cost": 1370,
+      "rank": 2,
+      "salary": 22,
+      "price": 47,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        93,
+        51,
+        68,
+        30,
+        71,
+        84,
+        75,
+        100
+      ],
+      "skills": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "android_18",
+      "name": "Android 18",
+      "inspiredBy": "Android 18",
+      "source": "Dragon Ball",
+      "profile": "commanding",
+      "age": 28,
+      "cost": 2920,
+      "rank": 3,
+      "salary": 26,
+      "price": 54,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        87,
+        85,
+        90,
+        81,
+        81,
+        51,
+        66,
+        100
+      ],
+      "skills": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "nico_robin",
+      "name": "Nico Robin",
+      "inspiredBy": "Nico Robin",
+      "source": "One Piece",
+      "profile": "intellectual",
+      "age": 30,
+      "cost": 1460,
+      "rank": 2,
+      "salary": 22,
+      "price": 47,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        72,
+        87,
+        55,
+        78,
+        64,
+        60,
+        50,
+        100
+      ],
+      "skills": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "tsunade",
+      "name": "Tsunade",
+      "inspiredBy": "Tsunade",
+      "source": "Naruto",
+      "profile": "commanding",
+      "age": 50,
+      "cost": 3370,
+      "rank": 4,
+      "salary": 30,
+      "price": 57,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        83,
+        82,
+        90,
+        85,
+        88,
+        57,
+        68,
+        100
+      ],
+      "skills": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "morrigan_aensland",
+      "name": "Morrigan Aensland",
+      "inspiredBy": "Morrigan Aensland",
+      "source": "Darkstalkers",
+      "profile": "seductive",
+      "age": 28,
+      "cost": 2890,
+      "rank": 3,
+      "salary": 26,
+      "price": 54,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        99,
+        67,
+        62,
+        54,
+        77,
+        72,
+        98,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "cammy_white",
+      "name": "Cammy White",
+      "inspiredBy": "Cammy White",
+      "source": "Street Fighter",
+      "profile": "athletic",
+      "age": 26,
+      "cost": 850,
+      "rank": 2,
+      "salary": 22,
+      "price": 42,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        69,
+        58,
+        94,
+        76,
+        57,
+        72,
+        59,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "ada_wong",
+      "name": "Ada Wong",
+      "inspiredBy": "Ada Wong",
+      "source": "Resident Evil",
+      "profile": "seductive",
+      "age": 30,
+      "cost": 2880,
+      "rank": 3,
+      "salary": 26,
+      "price": 54,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        96,
+        74,
+        60,
+        56,
+        77,
+        71,
+        90,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "jill_valentine",
+      "name": "Jill Valentine",
+      "inspiredBy": "Jill Valentine",
+      "source": "Resident Evil",
+      "profile": "warrior",
+      "age": 30,
+      "cost": 1280,
+      "rank": 2,
+      "salary": 22,
+      "price": 43,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        67,
+        63,
+        87,
+        72,
+        63,
+        60,
+        54,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "princess_zelda",
+      "name": "Princess Zelda",
+      "inspiredBy": "Princess Zelda",
+      "source": "The Legend of Zelda",
+      "profile": "royal",
+      "age": 24,
+      "cost": 1460,
+      "rank": 2,
+      "salary": 22,
+      "price": 51,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        84,
+        90,
+        61,
+        62,
+        73,
+        68,
+        58,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "yor_forger",
+      "name": "Yor Forger",
+      "inspiredBy": "Yor Forger",
+      "source": "Spy × Family",
+      "profile": "warrior",
+      "age": 27,
+      "cost": 1460,
+      "rank": 2,
+      "salary": 22,
+      "price": 42,
+      "photo_pack_active": true,
+      "photo_count": 20,
+      "runtime_var": "SBW2_V131_YOR_FORGER",
+      "stats": [
+        65,
+        61,
+        96,
+        77,
+        65,
+        63,
+        52,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "makima",
+      "name": "Makima",
+      "inspiredBy": "Makima",
+      "source": "Chainsaw Man",
+      "profile": "commanding",
+      "age": 28,
+      "cost": 2890,
+      "rank": 3,
+      "salary": 26,
+      "price": 53,
+      "photo_pack_active": true,
+      "photo_count": 24,
+      "runtime_var": "SBW2_V179_MAKIMA",
+      "stats": [
+        83,
+        80,
+        80,
+        90,
+        85,
+        46,
+        63,
+        100
+      ],
+      "skills": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "black_widow",
+      "name": "Black Widow",
+      "inspiredBy": "Black Widow",
+      "source": "Marvel",
+      "profile": "athletic",
+      "age": 30,
+      "cost": 2830,
+      "rank": 3,
+      "salary": 26,
+      "price": 47,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        77,
+        62,
+        93,
+        73,
+        62,
+        76,
+        61,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "catwoman",
+      "name": "Catwoman",
+      "inspiredBy": "Catwoman",
+      "source": "DC Comics",
+      "profile": "seductive",
+      "age": 31,
+      "cost": 2890,
+      "rank": 3,
+      "salary": 26,
+      "price": 54,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        99,
+        71,
+        68,
+        55,
+        73,
+        75,
+        88,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "daphne_blake",
+      "name": "Daphne Blake",
+      "inspiredBy": "Daphne Blake",
+      "source": "Scooby-Doo",
+      "profile": "glamour",
+      "age": 25,
+      "cost": 2830,
+      "rank": 3,
+      "salary": 25,
+      "price": 54,
+      "photo_pack_active": true,
+      "photo_count": 20,
+      "runtime_var": "SBW2_V140_DAPHNE_BLAKE",
+      "stats": [
+        88,
+        83,
+        60,
+        47,
+        75,
+        74,
+        74,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "kira_vale",
+      "name": "Kira Vale",
+      "inspiredBy": "Original adult action heroine",
+      "source": "Original",
+      "profile": "athletic",
+      "age": 25,
+      "cost": 1100,
+      "rank": 2,
+      "salary": 22,
+      "price": 44,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        75,
+        62,
+        88,
+        70,
+        60,
+        75,
+        59,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "elastigirl",
+      "name": "Elastigirl",
+      "inspiredBy": "Elastigirl",
+      "source": "The Incredibles",
+      "profile": "athletic",
+      "age": 38,
+      "cost": 1460,
+      "rank": 2,
+      "salary": 22,
+      "price": 44,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        74,
+        62,
+        91,
+        67,
+        60,
+        74,
+        59,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "lola_bunny",
+      "name": "Lola Bunny",
+      "inspiredBy": "Lola Bunny",
+      "source": "Looney Tunes",
+      "profile": "athletic",
+      "age": 25,
+      "cost": 1370,
+      "rank": 2,
+      "salary": 22,
+      "price": 43,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        75,
+        59,
+        92,
+        67,
+        58,
+        74,
+        59,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "poison_ivy",
+      "name": "Poison Ivy",
+      "inspiredBy": "Poison Ivy",
+      "source": "DC Comics",
+      "profile": "seductive",
+      "age": 31,
+      "cost": 2860,
+      "rank": 3,
+      "salary": 26,
+      "price": 53,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        94,
+        70,
+        63,
+        55,
+        71,
+        72,
+        88,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "wonder_woman",
+      "name": "Wonder Woman",
+      "inspiredBy": "Wonder Woman",
+      "source": "DC Comics",
+      "profile": "divine",
+      "age": 30,
+      "cost": 3880,
+      "rank": 5,
+      "salary": 33,
+      "price": 64,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        89,
+        95,
+        86,
+        80,
+        93,
+        71,
+        75,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "boa_hancock",
+      "name": "Boa Hancock",
+      "inspiredBy": "Boa Hancock",
+      "source": "One Piece",
+      "profile": "royal",
+      "age": 31,
+      "cost": 2820,
+      "rank": 3,
+      "salary": 25,
+      "price": 54,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        86,
+        91,
+        59,
+        62,
+        75,
+        63,
+        63,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "sonya_blade",
+      "name": "Sonya Blade",
+      "inspiredBy": "Sonya Blade",
+      "source": "Mortal Kombat",
+      "profile": "warrior",
+      "age": 32,
+      "cost": 1370,
+      "rank": 2,
+      "salary": 22,
+      "price": 43,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        70,
+        62,
+        90,
+        71,
+        60,
+        57,
+        52,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "kitana",
+      "name": "Kitana",
+      "inspiredBy": "Kitana",
+      "source": "Mortal Kombat",
+      "profile": "royal",
+      "age": 28,
+      "cost": 1280,
+      "rank": 2,
+      "salary": 22,
+      "price": 51,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        85,
+        92,
+        56,
+        60,
+        72,
+        65,
+        57,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "rangiku_matsumoto",
+      "name": "Rangiku Matsumoto",
+      "inspiredBy": "Rangiku Matsumoto",
+      "source": "Bleach",
+      "profile": "glamour",
+      "age": 30,
+      "cost": 2840,
+      "rank": 3,
+      "salary": 26,
+      "price": 54,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        89,
+        80,
+        62,
+        47,
+        79,
+        73,
+        75,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "erza_scarlet",
+      "name": "Erza Scarlet",
+      "inspiredBy": "Erza Scarlet",
+      "source": "Fairy Tail",
+      "profile": "warrior",
+      "age": 25,
+      "cost": 1190,
+      "rank": 2,
+      "salary": 22,
+      "price": 43,
+      "photo_pack_active": true,
+      "photo_count": 25,
+      "runtime_var": "SBW2_V194_ERZA_SCARLET",
+      "stats": [
+        67,
+        61,
+        99,
+        80,
+        69,
+        59,
+        55,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "esdeath",
+      "name": "Esdeath",
+      "inspiredBy": "Esdeath",
+      "source": "Akame ga Kill!",
+      "profile": "commanding",
+      "age": 27,
+      "cost": 2920,
+      "rank": 3,
+      "salary": 26,
+      "price": 54,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        84,
+        81,
+        85,
+        86,
+        83,
+        48,
+        73,
+        100
+      ],
+      "skills": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "fubuki",
+      "name": "Fubuki",
+      "inspiredBy": "Fubuki",
+      "source": "One-Punch Man",
+      "profile": "glamour",
+      "age": 23,
+      "cost": 2870,
+      "rank": 3,
+      "salary": 26,
+      "price": 56,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        97,
+        85,
+        62,
+        49,
+        80,
+        71,
+        73,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "midnight",
+      "name": "Midnight",
+      "inspiredBy": "Midnight",
+      "source": "My Hero Academia",
+      "profile": "seductive",
+      "age": 31,
+      "cost": 2880,
+      "rank": 3,
+      "salary": 26,
+      "price": 53,
+      "photo_pack_active": true,
+      "photo_count": 25,
+      "runtime_var": "SBW2_V173_MIDNIGHT",
+      "stats": [
+        94,
+        67,
+        60,
+        51,
+        79,
+        76,
+        95,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "yoko_littner_adult",
+      "name": "Yoko Littner (adult)",
+      "inspiredBy": "Yoko Littner",
+      "source": "Gurren Lagann",
+      "profile": "athletic",
+      "age": 24,
+      "cost": 2830,
+      "rank": 3,
+      "salary": 25,
+      "price": 47,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        77,
+        60,
+        97,
+        66,
+        61,
+        76,
+        65,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "lucy_heartfilia_adult",
+      "name": "Lucy Heartfilia (adult)",
+      "inspiredBy": "Lucy Heartfilia",
+      "source": "Fairy Tail",
+      "profile": "glamour",
+      "age": 24,
+      "cost": 2830,
+      "rank": 3,
+      "salary": 25,
+      "price": 54,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        94,
+        79,
+        57,
+        46,
+        77,
+        74,
+        76,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "kagea",
+      "name": "Kagea",
+      "inspiredBy": "Original adult shinobi",
+      "source": "Original",
+      "profile": "athletic",
+      "age": 22,
+      "cost": 1190,
+      "rank": 2,
+      "salary": 22,
+      "price": 44,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        76,
+        59,
+        92,
+        69,
+        61,
+        71,
+        61,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "sophitia_alexandra",
+      "name": "Sophitia Alexandra",
+      "inspiredBy": "Sophitia Alexandra",
+      "source": "Soulcalibur",
+      "profile": "warrior",
+      "age": 25,
+      "cost": 1460,
+      "rank": 2,
+      "salary": 22,
+      "price": 42,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        64,
+        61,
+        92,
+        75,
+        62,
+        58,
+        55,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "sarah_bryant",
+      "name": "Sarah Bryant",
+      "inspiredBy": "Sarah Bryant",
+      "source": "Virtua Fighter",
+      "profile": "athletic",
+      "age": 27,
+      "cost": 1280,
+      "rank": 2,
+      "salary": 22,
+      "price": 44,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        76,
+        60,
+        90,
+        68,
+        62,
+        74,
+        59,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "helena_douglas",
+      "name": "Helena Douglas",
+      "inspiredBy": "Helena Douglas",
+      "source": "Dead or Alive",
+      "profile": "refined",
+      "age": 25,
+      "cost": 880,
+      "rank": 2,
+      "salary": 22,
+      "price": 50,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        77,
+        91,
+        59,
+        66,
+        72,
+        70,
+        58,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "mai_valentine",
+      "name": "Mai Valentine",
+      "inspiredBy": "Mai Valentine",
+      "source": "Yu-Gi-Oh!",
+      "profile": "glamour",
+      "age": 24,
+      "cost": 2850,
+      "rank": 3,
+      "salary": 26,
+      "price": 54,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        89,
+        85,
+        57,
+        52,
+        77,
+        73,
+        79,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "black_canary",
+      "name": "Black Canary",
+      "inspiredBy": "Black Canary",
+      "source": "DC Comics",
+      "profile": "athletic",
+      "age": 29,
+      "cost": 1280,
+      "rank": 2,
+      "salary": 22,
+      "price": 44,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        77,
+        63,
+        89,
+        65,
+        60,
+        75,
+        62,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "zatanna",
+      "name": "Zatanna",
+      "inspiredBy": "Zatanna",
+      "source": "DC Comics",
+      "profile": "mystic",
+      "age": 28,
+      "cost": 2870,
+      "rank": 3,
+      "salary": 26,
+      "price": 54,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        82,
+        89,
+        64,
+        66,
+        78,
+        63,
+        76,
+        100
+      ],
+      "skills": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "power_girl",
+      "name": "Power Girl",
+      "inspiredBy": "Power Girl",
+      "source": "DC Comics",
+      "profile": "warrior",
+      "age": 29,
+      "cost": 1280,
+      "rank": 2,
+      "salary": 22,
+      "price": 43,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        68,
+        60,
+        91,
+        73,
+        63,
+        57,
+        56,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "psylocke",
+      "name": "Psylocke",
+      "inspiredBy": "Psylocke",
+      "source": "Marvel / X-Men",
+      "profile": "warrior",
+      "age": 29,
+      "cost": 1100,
+      "rank": 2,
+      "salary": 22,
+      "price": 43,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        68,
+        63,
+        89,
+        75,
+        63,
+        62,
+        53,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "emma_frost",
+      "name": "Emma Frost",
+      "inspiredBy": "Emma Frost",
+      "source": "Marvel / X-Men",
+      "profile": "commanding",
+      "age": 32,
+      "cost": 2930,
+      "rank": 3,
+      "salary": 26,
+      "price": 55,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        88,
+        87,
+        79,
+        82,
+        83,
+        56,
+        68,
+        100
+      ],
+      "skills": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "mercy",
+      "name": "Mercy",
+      "inspiredBy": "Mercy",
+      "source": "Overwatch",
+      "profile": "gentle",
+      "age": 37,
+      "cost": 1460,
+      "rank": 2,
+      "salary": 22,
+      "price": 48,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        83,
+        80,
+        57,
+        51,
+        60,
+        87,
+        50,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "aerith_gainsborough",
+      "name": "Aerith Gainsborough",
+      "inspiredBy": "Aerith Gainsborough",
+      "source": "Final Fantasy VII",
+      "profile": "gentle",
+      "age": 22,
+      "cost": 680,
+      "rank": 2,
+      "salary": 22,
+      "price": 47,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        84,
+        76,
+        56,
+        44,
+        58,
+        90,
+        56,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "lulu",
+      "name": "Lulu",
+      "inspiredBy": "Lulu",
+      "source": "Final Fantasy X",
+      "profile": "mystic",
+      "age": 28,
+      "cost": 2860,
+      "rank": 3,
+      "salary": 26,
+      "price": 53,
+      "photo_pack_active": true,
+      "photo_count": 20,
+      "runtime_var": "SBW2_V190_LULU",
+      "stats": [
+        81,
+        87,
+        65,
+        65,
+        74,
+        69,
+        73,
+        100
+      ],
+      "skills": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "jean_grey",
+      "name": "Jean Grey",
+      "inspiredBy": "Jean Grey",
+      "source": "Marvel / X-Men",
+      "profile": "mystic",
+      "age": 31,
+      "cost": 2860,
+      "rank": 3,
+      "salary": 26,
+      "price": 53,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        80,
+        89,
+        66,
+        68,
+        75,
+        63,
+        73,
+        100
+      ],
+      "skills": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "elsa",
+      "name": "Elsa",
+      "inspiredBy": "Elsa",
+      "source": "Frozen II",
+      "profile": "royal",
+      "age": 24,
+      "cost": 2820,
+      "rank": 3,
+      "salary": 25,
+      "price": 54,
+      "photo_pack_active": true,
+      "photo_count": 21,
+      "runtime_var": "SBW2_V208_ELSA",
+      "stats": [
+        82,
+        92,
+        58,
+        67,
+        78,
+        63,
+        59,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "chel",
+      "name": "Chel",
+      "inspiredBy": "Chel",
+      "source": "The Road to El Dorado",
+      "profile": "seductive",
+      "age": 25,
+      "cost": 2890,
+      "rank": 3,
+      "salary": 26,
+      "price": 53,
+      "photo_pack_active": true,
+      "photo_count": 30,
+      "runtime_var": "SBW2_V170_CHEL",
+      "stats": [
+        97,
+        70,
+        62,
+        56,
+        72,
+        77,
+        94,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "d_va",
+      "name": "D.Va",
+      "inspiredBy": "D.Va",
+      "source": "Overwatch",
+      "profile": "cute",
+      "age": 21,
+      "cost": 800,
+      "rank": 2,
+      "salary": 22,
+      "price": 47,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        89,
+        60,
+        62,
+        42,
+        66,
+        93,
+        60,
+        100
+      ],
+      "skills": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "jane_porter",
+      "name": "Jane Porter",
+      "inspiredBy": "Jane Porter",
+      "source": "Tarzan",
+      "profile": "intellectual",
+      "age": 25,
+      "cost": 500,
+      "rank": 2,
+      "salary": 22,
+      "price": 47,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "note": "10 images were uploaded in the latest chat turn but are NOT yet integrated into v208; next build should add them.",
+      "stats": [
+        74,
+        82,
+        60,
+        73,
+        63,
+        62,
+        49,
+        100
+      ],
+      "skills": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "scarlet_witch",
+      "name": "Scarlet Witch",
+      "inspiredBy": "Scarlet Witch",
+      "source": "Marvel",
+      "profile": "mystic",
+      "age": 29,
+      "cost": 2870,
+      "rank": 3,
+      "salary": 26,
+      "price": 54,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        84,
+        86,
+        66,
+        65,
+        76,
+        64,
+        76,
+        100
+      ],
+      "skills": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "captain_marvel",
+      "name": "Captain Marvel",
+      "inspiredBy": "Captain Marvel",
+      "source": "Marvel",
+      "profile": "warrior",
+      "age": 33,
+      "cost": 1100,
+      "rank": 2,
+      "salary": 22,
+      "price": 44,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        70,
+        64,
+        98,
+        79,
+        68,
+        60,
+        54,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "supergirl",
+      "name": "Supergirl",
+      "inspiredBy": "Supergirl",
+      "source": "DC Comics",
+      "profile": "warrior",
+      "age": 24,
+      "cost": 1190,
+      "rank": 2,
+      "salary": 22,
+      "price": 43,
+      "photo_pack_active": true,
+      "photo_count": 11,
+      "runtime_var": "SBW2_V131_SUPERGIRL",
+      "stats": [
+        70,
+        64,
+        91,
+        71,
+        63,
+        58,
+        54,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "mt_lady",
+      "name": "Mt. Lady",
+      "inspiredBy": "Mt. Lady",
+      "source": "My Hero Academia",
+      "profile": "glamour",
+      "age": 23,
+      "cost": 2890,
+      "rank": 3,
+      "salary": 26,
+      "price": 56,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        96,
+        84,
+        61,
+        46,
+        84,
+        79,
+        78,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "mirajane_strauss",
+      "name": "Mirajane Strauss",
+      "inspiredBy": "Mirajane Strauss",
+      "source": "Fairy Tail",
+      "profile": "gentle",
+      "age": 25,
+      "cost": 600,
+      "rank": 2,
+      "salary": 22,
+      "price": 48,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        83,
+        79,
+        63,
+        46,
+        63,
+        86,
+        60,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "invisible_woman",
+      "name": "Invisible Woman",
+      "inspiredBy": "Invisible Woman",
+      "source": "Marvel / Fantastic Four",
+      "profile": "mature",
+      "age": 34,
+      "cost": 3360,
+      "rank": 4,
+      "salary": 29,
+      "price": 59,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        85,
+        90,
+        72,
+        79,
+        90,
+        63,
+        67,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "mary_jane_watson",
+      "name": "Mary Jane Watson",
+      "inspiredBy": "Mary Jane Watson",
+      "source": "Marvel / Spider-Man",
+      "profile": "glamour",
+      "age": 27,
+      "cost": 2870,
+      "rank": 3,
+      "salary": 26,
+      "price": 55,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        92,
+        84,
+        58,
+        52,
+        78,
+        79,
+        75,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "dawn_adult",
+      "name": "Dawn",
+      "inspiredBy": "Dawn",
+      "source": "Pokémon",
+      "profile": "cute",
+      "age": 23,
+      "cost": 1370,
+      "rank": 2,
+      "salary": 22,
+      "price": 47,
+      "photo_pack_active": true,
+      "photo_count": 24,
+      "runtime_var": "SBW2_V201_DAWN_ADULT",
+      "stats": [
+        90,
+        68,
+        64,
+        55,
+        67,
+        94,
+        61,
+        100
+      ],
+      "skills": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "hello_nurse",
+      "name": "Hello Nurse",
+      "inspiredBy": "Hello Nurse",
+      "source": "Animaniacs",
+      "profile": "glamour",
+      "age": 28,
+      "cost": 2830,
+      "rank": 3,
+      "salary": 26,
+      "price": 54,
+      "photo_pack_active": true,
+      "photo_count": 24,
+      "runtime_var": "SBW2_V198_HELLO_NURSE",
+      "stats": [
+        92,
+        81,
+        59,
+        46,
+        75,
+        75,
+        76,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "cynthia",
+      "name": "Cynthia",
+      "inspiredBy": "Cynthia",
+      "source": "Pokémon",
+      "profile": "commanding",
+      "age": 30,
+      "cost": 2930,
+      "rank": 3,
+      "salary": 26,
+      "price": 55,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        85,
+        85,
+        81,
+        85,
+        85,
+        59,
+        64,
+        100
+      ],
+      "skills": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "angewomon",
+      "name": "Angewomon",
+      "inspiredBy": "Angewomon",
+      "source": "Digimon",
+      "profile": "divine",
+      "age": 25,
+      "cost": 3450,
+      "rank": 4,
+      "salary": 30,
+      "price": 62,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        95,
+        99,
+        77,
+        75,
+        91,
+        73,
+        73,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "officer_jenny",
+      "name": "Officer Jenny",
+      "inspiredBy": "Officer Jenny",
+      "source": "Pokémon",
+      "profile": "commanding",
+      "age": 28,
+      "cost": 2910,
+      "rank": 3,
+      "salary": 26,
+      "price": 53,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        84,
+        85,
+        82,
+        81,
+        77,
+        59,
+        67,
+        100
+      ],
+      "skills": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "nurse_joy",
+      "name": "Nurse Joy",
+      "inspiredBy": "Nurse Joy",
+      "source": "Pokémon",
+      "profile": "gentle",
+      "age": 27,
+      "cost": 450,
+      "rank": 2,
+      "salary": 22,
+      "price": 47,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        79,
+        75,
+        57,
+        45,
+        62,
+        87,
+        56,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "nocturna_arcana",
+      "name": "Nocturna Arcana",
+      "inspiredBy": "Original adult mage",
+      "source": "Original",
+      "profile": "mystic",
+      "age": 24,
+      "cost": 2840,
+      "rank": 3,
+      "salary": 26,
+      "price": 52,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        80,
+        85,
+        66,
+        61,
+        72,
+        67,
+        76,
+        100
+      ],
+      "skills": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "vados",
+      "name": "Vados",
+      "inspiredBy": "Vados",
+      "source": "Dragon Ball Super",
+      "profile": "divine",
+      "age": 30,
+      "cost": 3440,
+      "rank": 4,
+      "salary": 30,
+      "price": 62,
+      "photo_pack_active": true,
+      "photo_count": 20,
+      "runtime_var": "SBW2_V131_VADOS",
+      "stats": [
+        93,
+        99,
+        84,
+        72,
+        91,
+        68,
+        75,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "lusamine",
+      "name": "Lusamine",
+      "inspiredBy": "Lusamine",
+      "source": "Pokémon",
+      "profile": "mature",
+      "age": 40,
+      "cost": 2880,
+      "rank": 3,
+      "salary": 26,
+      "price": 54,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        81,
+        89,
+        71,
+        75,
+        84,
+        58,
+        65,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "cindy_aurum",
+      "name": "Cindy Aurum",
+      "inspiredBy": "Cindy Aurum",
+      "source": "Final Fantasy XV",
+      "profile": "glamour",
+      "age": 26,
+      "cost": 2850,
+      "rank": 3,
+      "salary": 26,
+      "price": 55,
+      "photo_pack_active": true,
+      "photo_count": 20,
+      "runtime_var": "SBW2_V163_CINDY_AURUM",
+      "stats": [
+        94,
+        83,
+        57,
+        49,
+        77,
+        77,
+        73,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "bella",
+      "name": "Bella",
+      "inspiredBy": "Original adult character",
+      "source": "Original",
+      "profile": "refined",
+      "age": 25,
+      "cost": 1280,
+      "rank": 2,
+      "salary": 22,
+      "price": 49,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        84,
+        88,
+        60,
+        67,
+        69,
+        77,
+        61,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "rummi",
+      "name": "Rummi",
+      "inspiredBy": "Rumi Usagiyama / Mirko",
+      "source": "My Hero Academia",
+      "profile": "athletic",
+      "age": 27,
+      "cost": 2890,
+      "rank": 3,
+      "salary": 26,
+      "price": 51,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        86,
+        67,
+        99,
+        78,
+        70,
+        76,
+        66,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "dark_magician",
+      "name": "Dark Magician",
+      "inspiredBy": "Dark Magician Girl (adult interpretation)",
+      "source": "Yu-Gi-Oh!",
+      "profile": "mystic",
+      "age": 25,
+      "cost": 3380,
+      "rank": 4,
+      "salary": 30,
+      "price": 60,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        89,
+        96,
+        68,
+        79,
+        88,
+        72,
+        83,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "sara_bellum",
+      "name": "Sara Bellum",
+      "inspiredBy": "Sara Bellum",
+      "source": "The Powerpuff Girls",
+      "profile": "glamour",
+      "age": 32,
+      "cost": 2840,
+      "rank": 3,
+      "salary": 26,
+      "price": 55,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        93,
+        84,
+        58,
+        47,
+        74,
+        74,
+        75,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "marcarita",
+      "name": "Marcarita",
+      "inspiredBy": "Marcarita",
+      "source": "Dragon Ball Super",
+      "profile": "divine",
+      "age": 30,
+      "cost": 3410,
+      "rank": 4,
+      "salary": 30,
+      "price": 61,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        93,
+        97,
+        76,
+        74,
+        87,
+        70,
+        73,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "samui",
+      "name": "Samui",
+      "inspiredBy": "Samui",
+      "source": "Naruto Shippuden",
+      "profile": "refined",
+      "age": 29,
+      "cost": 2840,
+      "rank": 3,
+      "salary": 26,
+      "price": 53,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        81,
+        91,
+        65,
+        67,
+        72,
+        71,
+        58,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "nicole_demara",
+      "name": "Nicole Demara",
+      "inspiredBy": "Nicole Demara",
+      "source": "Zenless Zone Zero",
+      "profile": "glamour",
+      "age": 24,
+      "cost": 2850,
+      "rank": 3,
+      "salary": 26,
+      "price": 55,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        94,
+        81,
+        62,
+        47,
+        79,
+        73,
+        73,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "tatsumaki",
+      "name": "Tatsumaki",
+      "inspiredBy": "Tatsumaki",
+      "source": "One-Punch Man",
+      "profile": "mystic",
+      "age": 28,
+      "cost": 2860,
+      "rank": 3,
+      "salary": 26,
+      "price": 53,
+      "photo_pack_active": true,
+      "photo_count": 10,
+      "runtime_var": "SBW2_V131_TATSUMAKI",
+      "stats": [
+        81,
+        89,
+        66,
+        73,
+        71,
+        61,
+        73,
+        100
+      ],
+      "skills": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "holli_would",
+      "name": "Holli Would",
+      "inspiredBy": "Holli Would",
+      "source": "Cool World",
+      "profile": "seductive",
+      "age": 28,
+      "cost": 2870,
+      "rank": 3,
+      "salary": 26,
+      "price": 53,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        95,
+        70,
+        60,
+        55,
+        72,
+        73,
+        93,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "misa_amane_21_era",
+      "name": "Misa Amane (21+ era)",
+      "inspiredBy": "Misa Amane",
+      "source": "Death Note",
+      "profile": "glamour",
+      "age": 24,
+      "cost": 2860,
+      "rank": 3,
+      "salary": 26,
+      "price": 55,
+      "photo_pack_active": true,
+      "photo_count": 21,
+      "runtime_var": "SBW2_V188_MISA_AMANE",
+      "stats": [
+        93,
+        82,
+        60,
+        43,
+        79,
+        81,
+        77,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "minerva_mink",
+      "name": "Minerva Mink",
+      "inspiredBy": "Minerva Mink",
+      "source": "Animaniacs",
+      "profile": "seductive",
+      "age": 27,
+      "cost": 2850,
+      "rank": 3,
+      "salary": 26,
+      "price": 52,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        91,
+        71,
+        64,
+        53,
+        71,
+        74,
+        87,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "princess_clara",
+      "name": "Princess Clara",
+      "inspiredBy": "Princess Clara",
+      "source": "Drawn Together",
+      "profile": "royal",
+      "age": 25,
+      "cost": 1370,
+      "rank": 2,
+      "salary": 22,
+      "price": 51,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        82,
+        92,
+        56,
+        64,
+        73,
+        65,
+        61,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "betty_rubble",
+      "name": "Betty Rubble",
+      "inspiredBy": "Betty Rubble",
+      "source": "The Flintstones",
+      "profile": "gentle",
+      "age": 29,
+      "cost": 420,
+      "rank": 2,
+      "salary": 22,
+      "price": 47,
+      "photo_pack_active": true,
+      "photo_count": 16,
+      "runtime_var": "SBW2_V187_BETTY_RUBBLE",
+      "stats": [
+        81,
+        77,
+        62,
+        47,
+        59,
+        84,
+        61,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "she_ra_adult_analogue",
+      "name": "She-Ra (adult analogue)",
+      "inspiredBy": "She-Ra",
+      "source": "Masters of the Universe",
+      "profile": "warrior",
+      "age": 25,
+      "cost": 1460,
+      "rank": 2,
+      "salary": 22,
+      "price": 43,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        68,
+        60,
+        99,
+        83,
+        70,
+        59,
+        53,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "gadget_hackwrench",
+      "name": "Gadget Hackwrench",
+      "inspiredBy": "Gadget Hackwrench",
+      "source": "Chip 'n Dale Rescue Rangers",
+      "profile": "intellectual",
+      "age": 25,
+      "cost": 620,
+      "rank": 2,
+      "salary": 22,
+      "price": 48,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        75,
+        85,
+        56,
+        76,
+        67,
+        60,
+        49,
+        100
+      ],
+      "skills": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "belldandy",
+      "name": "Belldandy",
+      "inspiredBy": "Belldandy",
+      "source": "Ah! My Goddess",
+      "profile": "divine",
+      "age": 27,
+      "cost": 3430,
+      "rank": 4,
+      "salary": 30,
+      "price": 60,
+      "photo_pack_active": true,
+      "photo_count": 29,
+      "runtime_var": "SBW2_V151_BELLDANDY",
+      "stats": [
+        90,
+        97,
+        82,
+        75,
+        88,
+        71,
+        75,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "jane_jetson",
+      "name": "Jane Jetson",
+      "inspiredBy": "Jane Jetson",
+      "source": "The Jetsons",
+      "profile": "mature",
+      "age": 35,
+      "cost": 2880,
+      "rank": 3,
+      "salary": 26,
+      "price": 54,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        85,
+        87,
+        73,
+        69,
+        82,
+        65,
+        63,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "mrs_possible",
+      "name": "Mrs. Possible",
+      "inspiredBy": "Mrs. Possible",
+      "source": "Kim Possible",
+      "profile": "intellectual",
+      "age": 40,
+      "cost": 480,
+      "rank": 2,
+      "salary": 22,
+      "price": 47,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        73,
+        83,
+        57,
+        79,
+        67,
+        62,
+        48,
+        100
+      ],
+      "skills": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "jenny_realight",
+      "name": "Jenny Realight",
+      "inspiredBy": "Jenny Realight",
+      "source": "Fairy Tail",
+      "profile": "glamour",
+      "age": 25,
+      "cost": 2860,
+      "rank": 3,
+      "salary": 26,
+      "price": 55,
+      "photo_pack_active": true,
+      "photo_count": 26,
+      "runtime_var": "SBW2_V176_JENNY_REALIGHT",
+      "stats": [
+        93,
+        83,
+        59,
+        52,
+        79,
+        77,
+        73,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "bisca_connell",
+      "name": "Bisca Connell",
+      "inspiredBy": "Bisca Connell",
+      "source": "Fairy Tail",
+      "profile": "athletic",
+      "age": 27,
+      "cost": 760,
+      "rank": 2,
+      "salary": 22,
+      "price": 44,
+      "photo_pack_active": true,
+      "photo_count": 20,
+      "runtime_var": "SBW2_V131_BISCA_CONNELL",
+      "stats": [
+        72,
+        63,
+        88,
+        70,
+        62,
+        72,
+        64,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "commander_white",
+      "name": "Commander White",
+      "inspiredBy": "Commander White",
+      "source": "NieR: Automata",
+      "profile": "commanding",
+      "age": 32,
+      "cost": 2920,
+      "rank": 3,
+      "salary": 26,
+      "price": 55,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        87,
+        89,
+        76,
+        84,
+        85,
+        50,
+        68,
+        100
+      ],
+      "skills": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "pebbles_flintstone_adult_21",
+      "name": "Pebbles Flintstone (adult 21+)",
+      "inspiredBy": "Pebbles Flintstone",
+      "source": "The Flintstones",
+      "profile": "cute",
+      "age": 21,
+      "cost": 380,
+      "rank": 2,
+      "salary": 22,
+      "price": 46,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        83,
+        65,
+        61,
+        43,
+        64,
+        92,
+        55,
+        100
+      ],
+      "skills": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "katya_kazanova",
+      "name": "Katya Kazanova",
+      "inspiredBy": "Katya Kazanova",
+      "source": "Archer",
+      "profile": "seductive",
+      "age": 29,
+      "cost": 2860,
+      "rank": 3,
+      "salary": 26,
+      "price": 53,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        93,
+        69,
+        65,
+        54,
+        75,
+        73,
+        87,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "judy_hopps",
+      "name": "Judy Hopps",
+      "inspiredBy": "Judy Hopps",
+      "source": "Zootopia",
+      "profile": "athletic",
+      "age": 24,
+      "cost": 2830,
+      "rank": 3,
+      "salary": 26,
+      "price": 46,
+      "photo_pack_active": true,
+      "photo_count": 20,
+      "runtime_var": "SBW2_V153_JUDY_HOPPS",
+      "stats": [
+        71,
+        60,
+        95,
+        73,
+        63,
+        82,
+        60,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "anna",
+      "name": "Anna",
+      "inspiredBy": "Anna (Frozen II)",
+      "source": "Frozen II",
+      "profile": "cute",
+      "age": 21,
+      "cost": 550,
+      "rank": 2,
+      "salary": 22,
+      "price": 46,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        88,
+        60,
+        64,
+        43,
+        62,
+        98,
+        57,
+        100
+      ],
+      "skills": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "astrid_hofferson_adult",
+      "name": "Astrid Hofferson (adult)",
+      "inspiredBy": "Astrid Hofferson",
+      "source": "How to Train Your Dragon 3",
+      "profile": "warrior",
+      "age": 21,
+      "cost": 1370,
+      "rank": 2,
+      "salary": 22,
+      "price": 42,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        64,
+        60,
+        99,
+        77,
+        62,
+        57,
+        51,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "fiona_frost",
+      "name": "Fiona Frost",
+      "inspiredBy": "Fiona Frost",
+      "source": "Spy × Family",
+      "profile": "refined",
+      "age": 28,
+      "cost": 780,
+      "rank": 2,
+      "salary": 22,
+      "price": 49,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        78,
+        90,
+        59,
+        64,
+        71,
+        69,
+        60,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "sakura_haruno_adult",
+      "name": "Sakura Haruno (adult)",
+      "inspiredBy": "Sakura Haruno",
+      "source": "Naruto/Boruto",
+      "profile": "warrior",
+      "age": 32,
+      "cost": 1100,
+      "rank": 2,
+      "salary": 22,
+      "price": 44,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        67,
+        67,
+        95,
+        82,
+        65,
+        62,
+        51,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "ino_yamanaka_adult",
+      "name": "Ino Yamanaka (adult)",
+      "inspiredBy": "Ino Yamanaka",
+      "source": "Naruto/Boruto",
+      "profile": "glamour",
+      "age": 32,
+      "cost": 2820,
+      "rank": 3,
+      "salary": 25,
+      "price": 54,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        90,
+        79,
+        58,
+        49,
+        75,
+        73,
+        75,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "shizuka_marikawa",
+      "name": "Shizuka Marikawa",
+      "inspiredBy": "Shizuka Marikawa",
+      "source": "Highschool of the Dead",
+      "profile": "gentle",
+      "age": 27,
+      "cost": 520,
+      "rank": 2,
+      "salary": 22,
+      "price": 48,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        84,
+        81,
+        57,
+        46,
+        60,
+        89,
+        57,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "annie_leonhart_adult",
+      "name": "Annie Leonhart (adult)",
+      "inspiredBy": "Annie Leonhart",
+      "source": "Attack on Titan",
+      "profile": "warrior",
+      "age": 23,
+      "cost": 1460,
+      "rank": 2,
+      "salary": 22,
+      "price": 41,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        64,
+        60,
+        98,
+        81,
+        59,
+        51,
+        56,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "frederica_baumann",
+      "name": "Frederica Baumann",
+      "inspiredBy": "Frederica Baumann",
+      "source": "Re:Zero",
+      "profile": "refined",
+      "age": 25,
+      "cost": 740,
+      "rank": 2,
+      "salary": 22,
+      "price": 49,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        77,
+        91,
+        62,
+        63,
+        69,
+        65,
+        64,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "b_jenet",
+      "name": "B. Jenet",
+      "inspiredBy": "B. Jenet",
+      "source": "Garou / The King of Fighters",
+      "profile": "glamour",
+      "age": 25,
+      "cost": 2850,
+      "rank": 3,
+      "salary": 26,
+      "price": 55,
+      "photo_pack_active": true,
+      "photo_count": 19,
+      "runtime_var": "SBW2_V131_B_JENET",
+      "stats": [
+        94,
+        82,
+        60,
+        48,
+        77,
+        76,
+        75,
+        100
+      ],
+      "skills": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "videl_adult",
+      "name": "Videl (adult)",
+      "inspiredBy": "Videl",
+      "source": "Dragon Ball",
+      "profile": "athletic",
+      "age": 27,
+      "cost": 2820,
+      "rank": 3,
+      "salary": 25,
+      "price": 46,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        71,
+        59,
+        97,
+        74,
+        63,
+        74,
+        60,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "bo_peep",
+      "name": "Bo Peep",
+      "inspiredBy": "Bo Peep",
+      "source": "Toy Story 4",
+      "profile": "refined",
+      "age": 26,
+      "cost": 720,
+      "rank": 2,
+      "salary": 22,
+      "price": 49,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        76,
+        88,
+        62,
+        68,
+        71,
+        66,
+        62,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "athenia",
+      "name": "Saori Kido",
+      "inspiredBy": "Saint Seiya",
+      "source": "Saint Seiya",
+      "profile": "divine",
+      "age": 25,
+      "cost": 3880,
+      "rank": 5,
+      "salary": 33,
+      "price": 65,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        92,
+        99,
+        80,
+        81,
+        95,
+        67,
+        76,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "jazmina",
+      "name": "Jazmín",
+      "inspiredBy": "Jasmine",
+      "source": "Disney-inspired original",
+      "profile": "royal",
+      "age": 25,
+      "cost": 820,
+      "rank": 2,
+      "salary": 22,
+      "price": 50,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        85,
+        87,
+        59,
+        67,
+        72,
+        66,
+        58,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "rapsela",
+      "name": "Rapsela",
+      "inspiredBy": "Rapunzel",
+      "source": "Disney-inspired original",
+      "profile": "cute",
+      "age": 24,
+      "cost": 650,
+      "rank": 2,
+      "salary": 22,
+      "price": 47,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        92,
+        63,
+        64,
+        42,
+        62,
+        95,
+        58,
+        100
+      ],
+      "skills": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "auriel",
+      "name": "Aurora",
+      "inspiredBy": "Aurora",
+      "source": "Disney-inspired original",
+      "profile": "royal",
+      "age": 24,
+      "cost": 2820,
+      "rank": 3,
+      "salary": 25,
+      "price": 54,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        79,
+        98,
+        61,
+        63,
+        70,
+        70,
+        56,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "vilma_flintstone",
+      "name": "Vilma Flintstone",
+      "inspiredBy": "Wilma Flintstone",
+      "source": "The Flintstones",
+      "profile": "mature",
+      "age": 32,
+      "cost": 580,
+      "rank": 3,
+      "salary": 26,
+      "price": 54,
+      "photo_pack_active": true,
+      "photo_count": 20,
+      "runtime_var": "SBW2_V135_VILMA_FLINTSTONE",
+      "stats": [
+        88,
+        84,
+        60,
+        64,
+        79,
+        73,
+        67,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "eida",
+      "name": "Eida",
+      "inspiredBy": "Original adult character",
+      "source": "Original",
+      "profile": "balanced",
+      "age": 25,
+      "cost": 1190,
+      "rank": 2,
+      "salary": 22,
+      "price": 48,
+      "photo_pack_active": true,
+      "photo_count": 16,
+      "runtime_var": "SBW2_V168_EIDA",
+      "stats": [
+        80,
+        80,
+        70,
+        60,
+        70,
+        75,
+        65,
+        100
+      ],
+      "skills": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "mimi",
+      "name": "Mimi",
+      "inspiredBy": "Original adult character",
+      "source": "Original",
+      "profile": "balanced",
+      "age": 25,
+      "cost": 1280,
+      "rank": 2,
+      "salary": 22,
+      "price": 48,
+      "photo_pack_active": true,
+      "photo_count": 14,
+      "runtime_var": "SBW2_V162_MIMI",
+      "stats": [
+        80,
+        80,
+        70,
+        60,
+        70,
+        75,
+        65,
+        100
+      ],
+      "skills": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "batgirl",
+      "name": "Batgirl",
+      "inspiredBy": "Batgirl",
+      "source": "DC Comics",
+      "profile": "athletic",
+      "age": 25,
+      "cost": 1370,
+      "rank": 2,
+      "salary": 22,
+      "price": 44,
+      "photo_pack_active": true,
+      "photo_count": 10,
+      "runtime_var": "SBW2_V164_BATGIRL",
+      "stats": [
+        75,
+        63,
+        91,
+        68,
+        63,
+        74,
+        61,
+        100
+      ],
+      "skills": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "isabela_madrigal",
+      "name": "Isabela Madrigal",
+      "inspiredBy": "Isabela Madrigal",
+      "source": "Encanto",
+      "profile": "royal",
+      "age": 21,
+      "cost": 2840,
+      "rank": 3,
+      "salary": 26,
+      "price": 54,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        90,
+        90,
+        61,
+        60,
+        78,
+        72,
+        64,
+        100
+      ],
+      "skills": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "judy_jetson",
+      "name": "Judy Jetson",
+      "inspiredBy": "Judy Jetson (adult reinterpretation)",
+      "source": "The Jetsons",
+      "profile": "glamour",
+      "age": 25,
+      "cost": 840,
+      "rank": 2,
+      "salary": 22,
+      "price": 50,
+      "photo_pack_active": false,
+      "photo_count": 0,
+      "runtime_var": null,
+      "stats": [
+        87,
+        78,
+        64,
+        55,
+        72,
+        86,
+        68,
+        100
+      ],
+      "skills": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "chilli",
+      "name": "Chilli",
+      "inspiredBy": "Chilli",
+      "source": "Bluey",
+      "profile": "balanced",
+      "age": 25,
+      "cost": 1550,
+      "rank": 2,
+      "salary": 22,
+      "price": 48,
+      "photo_pack_active": true,
+      "photo_count": 23,
+      "runtime_var": "SBW2_V205_CHILLI",
+      "stats": [
+        80,
+        80,
+        70,
+        60,
+        70,
+        75,
+        65,
+        100
+      ],
+      "skills": [
+        1,
+        1,
+        0
+      ]
+    }
+  ]
+}
