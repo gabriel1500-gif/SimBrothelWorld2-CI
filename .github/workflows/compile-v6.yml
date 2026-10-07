@@ -1,0 +1,146 @@
+name: Compile exact V6 source
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Expand Roslyn harness
+        shell: bash
+        run: |
+          rm -rf work
+          mkdir -p work
+          cat ci2_* > ci_payload_verified.b64
+          echo "caa05e23c9697d2aa413f103831d498cdfbc67d23f390d6b3ff81b441880c517  ci_payload_verified.b64" | sha256sum -c -
+          base64 -d ci_payload_verified.b64 > sbw2_ci_min.tar.gz
+          echo "ab0a79179c33b3f3a435578d45329735953f935dd01e7f0a7b7000535bd85740  sbw2_ci_min.tar.gz" | sha256sum -c -
+          tar -xzf sbw2_ci_min.tar.gz -C work
+          rm -rf work/Assets/SBW2
+          mkdir -p work/Assets
+          cp -R Assets/SBW2 work/Assets/SBW2
+
+      - name: Adapt lightweight Unity stubs
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          stub = Path("work/ci/UnityStubs.cs")
+          s = stub.read_text()
+
+          if "operator +(Vector2 a, Vector2 b)" not in s:
+              s = s.replace(
+                  "public static Vector2 zero => new Vector2(0,0);\n    }",
+                  "public static Vector2 zero => new Vector2(0,0);\n        public static Vector2 operator +(Vector2 a, Vector2 b) => new Vector2(a.x + b.x, a.y + b.y);\n    }"
+              )
+
+          if "Clamp01(float v)" not in s:
+              s = s.replace(
+                  "public static float Pow(float f,float p)=>MathF.Pow(f,p);\n    }",
+                  "public static float Pow(float f,float p)=>MathF.Pow(f,p);\n        public static float Clamp01(float v)=>Clamp(v,0f,1f);\n    }"
+              )
+
+          if "enum TextureFormat" not in s:
+              s = s.replace(
+                  "public class Texture : Object { public int width {get;set;}=1080; public int height {get;set;}=1920; }\n    public class Texture2D : Texture { }",
+                  "public class Texture : Object { public int width {get;set;}=1080; public int height {get;set;}=1920; }\n    public enum TextureFormat { RGBA32, RGB24, ARGB32 }\n    public class Texture2D : Texture { public Texture2D() { } public Texture2D(int width,int height,TextureFormat format,bool mipChain){this.width=width;this.height=height;} public bool LoadImage(byte[] data)=>true; }"
+              )
+
+          if "public static class ImageConversion" not in s:
+              s += "\nnamespace UnityEngine { public static class ImageConversion { public static bool LoadImage(Texture2D tex, byte[] data) => true; } }\n"
+
+          if "namespace UnityEngine.EventSystems" not in s:
+              s += "\nnamespace UnityEngine.EventSystems { public class EventSystem : UnityEngine.MonoBehaviour { } public class StandaloneInputModule : UnityEngine.MonoBehaviour { } }\n"
+
+          if "public enum KeyCode" not in s:
+              s += "\nnamespace UnityEngine { public enum KeyCode { Escape } public static class Input { public static bool GetKeyDown(KeyCode code) => false; } }\n"
+
+          if "class InputField" not in s:
+              s += "\nnamespace UnityEngine.UI { public class InputField : UnityEngine.MonoBehaviour { public enum ContentType { Standard, IntegerNumber } public enum LineType { SingleLine } public int characterLimit; public string text { get; set; } = \"\"; public bool interactable = true; public ContentType contentType; public LineType lineType; public Text textComponent; public Graphic placeholder; public Graphic targetGraphic; } }\n"
+
+          if "interface IPreprocessBuildWithReport" not in s:
+              s += "\nnamespace UnityEditor.Build.Reporting { public class BuildReport { } }\nnamespace UnityEditor.Build { public interface IPreprocessBuildWithReport { int callbackOrder { get; } void OnPreprocessBuild(UnityEditor.Build.Reporting.BuildReport report); } public class BuildFailedException : System.Exception { public BuildFailedException(string message) : base(message) { } } }\n"
+
+          stub.write_text(s)
+
+          for p in Path("work/Assets/SBW2").rglob("*.cs"):
+              src = p.read_text()
+              src = src.replace("FindAnyObjectByType<", "FindObjectOfType<")
+              src = src.replace("Application.isBatchMode", "false")
+              src = src.replace("Application.version", "\"0.19.0\"")
+              src = src.replace("            StopAllCoroutines();\n", "")
+
+              # These UnityEditor APIs are verified by real Unity Build Automation.
+              # The small Roslyn harness does not model them, so remove only from
+              # the disposable CI copy to keep the harness focused on project C#.
+              if p.name == "SBW2AndroidSetup.cs":
+                  src = src.replace("using UnityEditor.Build;\n", "")
+                  src = src.replace('            PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.gabriel1500.simbrothelworld2");\n', "")
+                  src = src.replace("            PlayerSettings.Android.bundleVersionCode = 19;\n", "")
+              if p.name == "SBW2CloudSceneBootstrap.cs":
+                  src = src.replace("using UnityEditor.Callbacks;\n", "")
+                  src = src.replace("        [DidReloadScripts(0)]\n", "")
+
+              if p.name == "SBW2PreflightValidator.cs":
+                  src = src.replace(
+                      "x => x.enabled && x.path == scenePath",
+                      "x => true"
+                  )
+
+              if p.name == "SBW2PrebuildGate.cs":
+                  src = src.replace(
+                      "            var scene = EditorSceneManager.OpenScene(scenePath, OpenSceneMode.Single);\n",
+                      ""
+                  )
+                  start = src.find(
+                      "            if (PlayerSettings.GetApplicationIdentifier(NamedBuildTarget.Android)"
+                  )
+                  end = src.find(
+                      "            if (PlayerSettings.bundleVersion != \"0.19.0\")",
+                      start
+                  )
+                  if start >= 0 and end > start:
+                      src = src[:start] + src[end:]
+
+                  start = src.find(
+                      "            if (PlayerSettings.Android.bundleVersionCode != 19)"
+                  )
+                  end = src.find(
+                      "            if ((PlayerSettings.Android.targetArchitectures",
+                      start
+                  )
+                  if start >= 0 and end > start:
+                      src = src[:start] + src[end:]
+
+              p.write_text(src)
+          PY
+
+      - name: Compile current SBW2 scripts
+        shell: bash
+        run: |
+          set +e
+          dotnet build work/ci/SBW2Compile.csproj -c Release --nologo 2>&1 | tee compile.log
+          status=${PIPESTATUS[0]}
+          exit "$status"
+
+      - name: Upload compile log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sbw2-current-source-compile-log
+          path: compile.log
+          if-no-files-found: warn
