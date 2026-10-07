@@ -1,0 +1,67 @@
+{
+  "properties": [
+    {
+      "id": "alley",
+      "name": "Lantern Alley Room",
+      "district": "Outer Quarter",
+      "cap": 1,
+      "appeal": 0.75,
+      "upkeep": 2,
+      "price": 0
+    },
+    {
+      "id": "teahouse",
+      "name": "Willow Tea House",
+      "district": "West Market",
+      "cap": 2,
+      "appeal": 0.94,
+      "upkeep": 7,
+      "price": 550
+    },
+    {
+      "id": "inn",
+      "name": "Moonrise Inn",
+      "district": "Canal Ward",
+      "cap": 3,
+      "appeal": 1.08,
+      "upkeep": 15,
+      "price": 1800
+    },
+    {
+      "id": "silk",
+      "name": "Silk Courtyard",
+      "district": "Artisan Row",
+      "cap": 3,
+      "appeal": 1.2,
+      "upkeep": 22,
+      "price": 4200
+    },
+    {
+      "id": "salon",
+      "name": "Crimson Salon",
+      "district": "Theatre Ward",
+      "cap": 5,
+      "appeal": 1.36,
+      "upkeep": 38,
+      "price": 7800
+    },
+    {
+      "id": "estate",
+      "name": "Lotus Estate",
+      "district": "Garden District",
+      "cap": 7,
+      "appeal": 1.56,
+      "upkeep": 65,
+      "price": 17000
+    },
+    {
+      "id": "palace",
+      "name": "Central Lantern Palace",
+      "district": "Central Ward",
+      "cap": 10,
+      "appeal": 1.85,
+      "upkeep": 120,
+      "price": 45000
+    }
+  ]
+}
